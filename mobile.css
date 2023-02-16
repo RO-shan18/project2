@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header {
+    height: 300px;
+    animation: imaie 20s infinite linear;
+}
+
+@keyframes imaie{
+    30%{
+        background-image: url('https://images.unsplash.com/photo-1606722581293-628fa217a6f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80');
+        content: "";
+        background-repeat: no-repeat;
+        height:300px;
+        width:100%;
+        opacity: 0.7;
+        border-bottom: 3px solid rgb(0, 0, 0);
+    }
+
+    60%{
+        background-image: url('https://images.unsplash.com/photo-1609769682973-990c3b6695dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+        content: "";
+        background-repeat: no-repeat;
+        height:300px;
+        width:100%;
+        opacity: 0.7;
+        border-bottom: 3px solid rgb(0, 0, 0);
+    }
+
+    90%{
+        background-image: url('https://images.unsplash.com/photo-1547378809-db8f9515a63b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+        content: "";
+        background-repeat: no-repeat;
+        height:300px;
+        width:100%;
+        opacity: 0.7;
+        border-bottom: 3px solid rgb(0, 0, 0);
+    }
+}
+#navigation{
+    flex-wrap:wrap;
+}
+#navigation li {
+    padding: 7px 5px 10px 13px;
+}
+
+#navigation i {
+    padding: 0px 0px 0 0px;
+    position: absolute;
+    left: 14px;
+    top: 5px;
+}
+
+#navigation .lists{
+    display:block;
+}
+#section .para1 {
+    font-size: 15px;
+    margin: 111px 40px 0 38px;
+}
+
+.buttons #login {
+    padding: 3px 6px 1px 7px;
+}
+
+.buttons #Signin {
+    padding: 3px 6px 1px 7px;
+    margin: 11px 0px 0 22px;
+}
+
+/* section */
+section h1 {
+    margin: 9px 15px 11px 13px;
+    font-size: 15px;
+}
+
+section .para2 {
+    font-size: 12px;
+    margin: 0px 32px 0px 32px;
+}
+
+.container .image1 {
+        height: 302px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 26px 0 26px;
+}
+
+.container .image1 h2 {
+    font-size: 17px;
+    margin-left: 18px;
+    margin-bottom: 8px;
+}
+
+.container .image1 .box {
+    font-size: 12px;
+}
+
+/* footer */
+footer h2 {
+    font-size: 15px;
+}
+
+.footer #name {
+    margin: 9px 0 9px 0;
+}
+
+.footer input {
+    padding: 4px 73px 6px 10px;
+    border-radius: 16px;
+}
+
+.footer .book {
+    margin: 11px 0px 0 70px;
+    padding: 4px 42px 4px 30px;
+}
+
+footer .horizontal {
+    margin-top: 13px;
+}
+
+footer .paragraph {
+    margin: 8px;
+    font-size: 11px;
+}
+
+footer div .terms {
+    font-size: 11px;
+}
+
+.terms li {
+    padding: 0 6px 0 0;
+}

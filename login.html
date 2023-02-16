@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* Background image */
+        header {
+            background-image: url('https://images.unsplash.com/photo-1547106365-bb4b17f50a15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80');
+            content: "";
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 800px;
+            animation: image2 20s infinite linear
+        }
+
+        @keyframes image2 {
+            30% {
+                background-image: url('https://images.unsplash.com/photo-1601821139314-66a4d14cfc00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1788&q=80');
+                content: "";
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 800px;
+            }
+
+            60% {
+                background-image: url('https://images.unsplash.com/photo-1601821139990-9fc929db79ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+                content: "";
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 800px;
+            }
+
+            90% {
+                background-image: url('https://images.unsplash.com/photo-1607406374368-809f8ec7f118?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80');
+                content: "";
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 800px;
+            }
+        }
+
+        /* Login form section */
+        #section3 {
+            margin: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #section3 div input {
+            padding: 8px 139px 11px 118px;
+            margin: 13px 0 5px 0;
+            border-radius: 10px;
+            box-shadow: 3px 2px 8px black;
+            background-color: aliceblue;
+        }
+
+        #section3 div input:hover {
+            box-shadow: 12px 12px 15px black;
+            transition: all 0.8s;
+        }
+
+        #section3 div .button {
+            padding: 8px 107px 8px 99px;
+            margin: 20px 0 0 102px;
+            border-radius: 12px;
+            box-shadow: 4px 3px 11px;
+        }
+
+        /* Navigation Menu */
+        #navigation {
+            background-color: greenyellow;
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            border-radius: 12px;
+            opacity: 0.8;
+        }
+
+        #navigation li {
+            padding: 15px 0px 15px 55px;
+        }
+
+        #navigation li a {
+            text-decoration: none;
+            color: black;
+            padding: 15px 0px 15px 20px;
+            font-weight: bold;
+            transition: all 0.1s linear 0s;
+
+        }
+
+        #navigation li a:hover {
+            color: blue;
+            font-weight: bolder;
+        }
+
+        #navigation i {
+            display: none;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 110px;
+            text-shadow: 2px 2px 2px white;
+        }
+
+        @media only screen and (max-width:850px) {
+            #navigation {
+                background-color: greenyellow;
+                list-style-type: none;
+                border-radius: 12px;
+                opacity: 0.8;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            #navigation li {
+                padding: 10px 5px 10px 13px;
+                font-size: 11px;
+            }
+
+            #navigation i {
+                position: absolute;
+                left: 0;
+                padding: 7px 0px 0 10px;
+                font-size: 17px;
+                display: block;
+            }
+
+            h1 {
+                margin-top: 89px;
+                font-size: 29px;
+            }
+
+            #section3 div input {
+                padding: 6px 110px 6px 91px;
+                margin: 5px 0 5px 0;
+                border-radius: 15px;
+                box-shadow: 3px 2px 8px black;
+                background-color: aliceblue;
+            }
+
+            #section3 div .button {
+                padding: 4px 87px 8px 73px;
+                margin: 7px 0 0 92px;
+                border-radius: 18px;
+            }
+        }
+
+        @media only screen and (max-width:550px) {
+            #navigation {
+                flex-wrap: wrap;
+            }
+
+            #navigation li {
+                padding: 7px 5px 10px 13px;
+            }
+
+            #navigation i {
+                padding: 0px 0px 0 0px;
+                position: absolute;
+                left: 14px;
+                top: 5px;
+            }
+
+
+            h1 {
+                margin-top: 70px;
+                font-size: 22px;
+            }
+
+            #section3 div input {
+                padding: 6px 39px 6px 43px;
+                margin: 4px 0 5px 0;
+                border-radius: 15px;
+                box-shadow: 3px 2px 8px black;
+                background-color: aliceblue;
+            }
+
+            #section3 div .button {
+                padding: 4px 42px 8px 42px;
+                margin: 5px 0 0 69px;
+                border-radius: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="loginform">
+        <navbar>
+            <ul id="navigation">
+                <i class="fa fa-bars"></i>
+                <li class="lists"><a href="index.html">HOME</a></li>
+                <li class="lists"><a href="#">VISITORS</a></li>
+                <li class="lists"><a href="places.html">PLACES</a></li>
+                <li class="lists"><a href="#">ABOUT US</a></li>
+                <li class="lists"><a href="#">CONTACT US</a></li>
+            </ul>
+        </navbar>
+
+        <h1>Login</h1>
+        <section id="section3">
+
+            <form action="backend.php">
+
+                <div>
+                    <label name="Email">
+                        <input type="email" id="email" placeholder="Enter your e-mail">
+                    </label>
+                </div>
+                <div>
+                    <label name="password">
+                        <input type="password" id="password" placeholder="Enter your password">
+                    </label>
+                </div>
+
+                <div>
+                    <label name="button">
+                        <button class="button">login</button>
+                    </label>
+                </div>
+            </form>
+        </section>
+    </header>
+</body>
+
+</html>
